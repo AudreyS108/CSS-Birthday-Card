@@ -20,11 +20,13 @@ This project was made by using the coding languages HTML, CSS and JavaScript. I 
 * HTML: Used for the basic structure of the website, as well as also being used to add images, buttons and (lots of) divs.
 * CSS: The *primary* code language used for this project. It's responsible for the design of the cake, card, background and animations
 * JS: I used it for button functions, such as for the blowing of the candles and the disable/enable buttons.
+* As a special addition, I added my friend's favourite things: the colour pale green, lemon cake, and the font Outfit!
 **add the part with the surprise anim later**
 __________________________________________________________
 I was faced with multiple challenges throughout the making of this project.
-* Challenge 1:
-
+* Challenge 1: I wanted to create a function for the candle flame to disappear (to mimic the blowing of the candles). To do this I had to link JavaScript on my website, a language whcih I wasn't too familiar with at the time. After learning with some resources online (and using some of my own prior knowledge and intuition) I managed to create a function where the candle (button) would disappear after being clicked.
+* Challenge 2: After creating the "blow out the candles" function and finishing the card animations, I realised I couldn't even tap the buttons because of the animations playing :( In order to fix this, I added a "Disable Animations" button and "Enable Animations" button to fix this. Within these buttons I added functions so that when the "Disable Animations" was pressed, the JS would add a class of "noanim", stopping the anim. For the "Enable Animations" button, I did the opposite and removed the "noanim" class. 
+* **ADD MORE LATER**
 
 I think being able to create this project has given me a boost in confidence, and I also further developed my HTML, CSS and JavaScript skills along the way, which I'm extremely happy about. :)
 __________________________________________________________

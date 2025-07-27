@@ -1,0 +1,784 @@
+
+.bg{
+    height: 740px;
+    width: 1535px;
+    
+}
+
+/*lock card when space is pressed? so the candles can be clicked*/
+
+
+.candlesfire{
+    z-index: 200;
+}
+
+img{
+    height: 320px;
+    width: 320px;
+    
+    position: absolute;
+    
+
+}
+
+body{
+    background-color: #ffffff;
+}
+
+
+
+/*fonts*/
+.outfitfonttitle{
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  text-align: center;
+  /*ADD STROKE?*/
+}
+
+.outfitfontnorm{
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+}
+
+
+h1{
+    z-index: 20;
+    font-family: "Outfit", sans-serif;
+    font-weight: 500;
+    font-size: 50px;
+    position: absolute;
+    text-align: center;
+    left: 580px;
+    top: 20px;
+}
+
+
+/*buttons here*/
+.noanimbutton{
+    height: 50px;
+    width: 250px;
+    position: absolute;
+    left: 500px;
+    top: 670px;
+    font-family: "Outfit", sans-serif;
+    font-weight: 600;
+    background-color: white;
+    border: none;
+    font-size: 19px;
+}
+
+.yesanimbutton{
+    height: 50px;
+    width: 250px;
+    position: absolute;
+    left: 800px;
+    top: 670px;
+    font-family: "Outfit", sans-serif;
+    font-weight: 600;
+    background-color: white;
+    border: none;
+    font-size: 19px;
+}
+
+/*gift*/
+.gift{
+    position: absolute;
+    left: 627px;
+    top: 200px;
+    height: 300px;
+    width: 300px;
+    border-radius: 10px;
+    z-index: 0;
+
+}
+
+.addzindex{
+    z-index: 500;
+}
+
+/*card*/
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+
+}
+
+.outside p{
+    font-size: 35px;
+    padding: 2%;
+    padding-top: 20px;
+    letter-spacing: 1px;
+
+}
+
+
+
+.card{
+    width: 640px;
+    height: 400px;
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    /* what's webkit? */
+    -webkit-perspective: 1200px;
+    perspective: 1200px;
+    transition: 1s;
+    right: 300px;
+
+
+
+}
+
+
+.card:hover{
+    transform: rotate(-10deg) translate(150px);
+    
+    
+
+}
+
+.card:hover .outside{
+    transform: rotateY(-150deg);
+
+}
+
+.noanim{
+    transform: none !important;
+    transition: none !important;
+    animation: none !important;
+    
+    
+}
+
+
+.card.noanim, .card.noanim:hover, .card.noanim:hover .outside, .outside.noanim, .outside.noanim:hover{
+    transform: none !important;
+    transition: none !important;
+    animation: none !important;
+    
+    
+}
+
+
+
+p{
+    padding-top: 25px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 12.5px;
+  
+}
+
+.outside, 
+.inside{
+
+    
+    height: 100%;
+    width: 50%;
+    position: absolute;
+    left: 50.1%;
+
+}
+
+.inside{
+    left: 50%;
+    background: linear-gradient(to right, #e0e0e0, #ffffff);
+    
+
+
+}
+
+.outside{
+
+    -webkit-transform-style: preserve-3d;
+    z-index: 100;
+    transform-origin: left;
+    transition: 2s;
+
+}
+
+.front, .back{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    transform: rotateX(0deg);
+}
+
+.front{
+    background-color: white;
+
+}
+
+.back{
+    transform: rotateY(180deg);
+    
+    background-color: white;
+    align-items: center;
+    
+
+}
+
+.cake{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+
+}
+
+.top-layer, .mid-layer, .bottom-layer{
+    /* CHANGE COLORS LATER */
+    height: 80px;
+    width: 240px;
+    background-repeat: repeat;
+    background-size: 60px 100px;
+    background-position: 30px 0;
+    background-image: linear-gradient(
+        transparent 50px, 
+        #fff598 50px,
+        #fff598 60px,
+        transparent 60px), 
+        radial-gradient(circle at 30px 5px, #fff598 30px,
+        #ffe646 30px);
+        border-radius: 10px 10px 0 0 ;
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        top: 0px;
+        z-index: 0;
+}
+
+.mid-layer{
+    transform:scale(0.85);
+    top: 7px;
+    z-index: 15;
+}
+
+.top-layer{
+    transform:scale(0.7);
+    top:  25px;
+    z-index: 10;
+}
+
+/* change: added 15 candles on different layers */
+
+/*bottom layer*/
+.candle-1{
+    height: 43px;
+    width: 5px;
+    background: repeating-linear-gradient(
+        /* CHANGE THE COLOR LATER*/
+        45deg,
+        #82ef84 0,
+        #82ef84  5px,
+        #ffffff 5px,
+        #ffffff 10px
+    );
+    position: absolute;
+    margin: auto;
+    z-index: 60;
+
+    /*CHANGE THE POS*/
+    bottom: 80px;
+    left: 67px;
+}
+
+.candle-2{
+    height: 43px;
+    width: 5px;
+    background: repeating-linear-gradient(
+        /* CHANGE THE COLOR LATER*/
+        45deg,
+        #82ef84 0,
+        #82ef84 5px,
+        #ffffff 5px,
+        #ffffff 10px
+    );
+    position: absolute;
+    margin: auto;
+    z-index: 60;
+
+    /*CHANGE THE POS*/
+    bottom: 80px;
+    left: 97px;
+}
+
+.candle-3{
+    height: 43px;
+    width: 5px;
+    background: repeating-linear-gradient(
+        /* CHANGE THE COLOR LATER*/
+        45deg,
+        #82ef84 0,
+        #82ef84 5px,
+        #ffffff 5px,
+        #ffffff 10px
+    );
+    position: absolute;
+    margin: auto;
+    z-index: 60;
+
+    /*CHANGE THE POS*/
+    bottom: 80px;
+    left: 127px; 
+}
+
+.candle-4{
+    height: 43px;
+    width: 5px;
+    background: repeating-linear-gradient(
+        /* CHANGE THE COLOR LATER*/
+        45deg,
+        #82ef84 0,
+        #82ef84 5px,
+        #ffffff 5px,
+        #ffffff 10px
+    );
+    position: absolute;
+    margin: auto;
+    z-index: 60;
+
+    /*CHANGE THE POS*/
+    bottom: 80px;
+    left: 157px;
+}
+
+.candle-5{
+    height: 43px;
+    width: 5px;
+    background: repeating-linear-gradient(
+        /* CHANGE THE COLOR LATER*/
+        45deg,
+        #82ef84 0,
+        #82ef84 5px,
+        #ffffff 5px,
+        #ffffff 10px
+    );
+    position: absolute;
+    margin: auto;
+    z-index: 60;
+
+    /*CHANGE THE POS*/
+    bottom: 80px;
+    left: 187px;
+}
+
+.candle-6{
+    height: 43px;
+    width: 5px;
+    background: repeating-linear-gradient(
+        /* CHANGE THE COLOR LATER*/
+        45deg,
+        #82ef84 0,
+        #82ef84 5px,
+        #ffffff 5px,
+        #ffffff 10px
+    );
+    position: absolute;
+    margin: auto;
+    z-index: 60;
+
+    /*CHANGE THE POS*/
+    bottom: 80px;
+    left: 217px;
+}
+
+.candle-7{
+    height: 43px;
+    width: 5px;
+    background: repeating-linear-gradient(
+        /* CHANGE THE COLOR LATER*/
+        45deg,
+        #82ef84 0,
+        #82ef84 5px,
+        #ffffff 5px,
+        #ffffff 10px
+    );
+    position: absolute;
+    margin: auto;
+    z-index: 60;
+
+    /*CHANGE THE POS*/
+    bottom: 80px;
+    left: 247px;
+}
+/*mid layer*/
+.candle-8{
+    height: 43px;
+    width: 5px;
+    background: repeating-linear-gradient(
+        /* CHANGE THE COLOR LATER*/
+        45deg,
+        #82ef84 0,
+        #82ef84 5px,
+        #ffffff 5px,
+        #ffffff 10px
+    );
+    position: absolute;
+    margin: auto;
+    z-index: 60;
+
+    /*CHANGE THE POS*/
+    bottom: 147px;
+    left: 90px;
+}
+
+.candle-9{
+    height: 43px;
+    width: 5px;
+    background: repeating-linear-gradient(
+        /* CHANGE THE COLOR LATER*/
+        45deg,
+        #82ef84 0,
+        #82ef84 5px,
+        #ffffff 5px,
+        #ffffff 10px
+    );
+    position: absolute;
+    margin: auto;
+    z-index: 60;
+
+    /*CHANGE THE POS*/
+    bottom: 147px;
+    left: 123px;
+}
+
+.candle-10{
+    height: 43px;
+    width: 5px;
+    background: repeating-linear-gradient(
+        /* CHANGE THE COLOR LATER*/
+        45deg,
+        #82ef84 0,
+        #82ef84 5px,
+        #ffffff 5px,
+        #ffffff 10px
+    );
+    position: absolute;
+    margin: auto;
+    z-index: 60;
+
+    /*CHANGE THE POS*/
+    bottom: 147px;
+    left: 157px;
+}
+
+.candle-11{
+    height: 43px;
+    width: 5px;
+    background: repeating-linear-gradient(
+        /* CHANGE THE COLOR LATER*/
+        45deg,
+        #82ef84 0,
+        #82ef84 5px,
+        #ffffff 5px,
+        #ffffff 10px
+    );
+    position: absolute;
+    margin: auto;
+    z-index: 60;
+
+    /*CHANGE THE POS*/
+    bottom: 147px;
+    left: 190px;
+}
+
+.candle-12{
+    height: 43px;
+    width: 5px;
+    background: repeating-linear-gradient(
+        /* CHANGE THE COLOR LATER*/
+        45deg,
+        #82ef84 0,
+        #82ef84 5px,
+        #ffffff 5px,
+        #ffffff 10px
+    );
+    position: absolute;
+    margin: auto;
+    z-index: 60;
+
+    /*CHANGE THE POS*/
+    bottom: 147px;
+    left: 224px;
+}
+/*top layer*/
+.candle-13{
+    height: 43px;
+    width: 5px;
+    background: repeating-linear-gradient(
+        /* CHANGE THE COLOR LATER*/
+        45deg,
+        #82ef84 0,
+        #82ef84 5px,
+        #ffffff 5px,
+        #ffffff 10px
+    );
+    position: absolute;
+    margin: auto;
+    z-index: 5;
+
+    /*CHANGE THE POS*/
+    bottom: 202px;
+    left: 114px;
+}
+
+.candle-14{
+    height: 43px;
+    width: 5px;
+    background: repeating-linear-gradient(
+        /* CHANGE THE COLOR LATER*/
+        45deg,
+        #82ef84 0,
+        #82ef84 5px,
+        #ffffff 5px,
+        #ffffff 10px
+    );
+    position: absolute;
+    margin: auto;
+    z-index: 5;
+
+    /*CHANGE THE POS*/
+    bottom: 202px;
+    left: 157px;
+}
+
+.candle-15{
+    height: 43px;
+    width: 5px;
+    background: repeating-linear-gradient(
+        /* CHANGE THE COLOR LATER*/
+        45deg,
+        #82ef84 0,
+        #82ef84 5px,
+        #ffffff 5px,
+        #ffffff 10px
+    );
+    position: absolute;
+    margin: auto;
+    z-index: 5;
+
+    /*CHANGE THE POS*/
+    bottom: 202px;
+    left: 198px;
+    
+}
+
+/*CANDLE NO: BOTTOM - 7, MID: 5, TOP 3*/
+
+.candle1-fire{
+    border: none;
+    position: absolute;
+    height: 10px;
+    width: 10px;
+    background-color: #ffa500;
+    border-radius: 0 50% 50% 50%;
+    bottom: 125px;
+    transform: rotate(45deg);
+    left: 65px;
+    z-index: 80;
+}
+
+.candle2-fire{
+    border: none;
+    position: absolute;
+    height: 10px;
+    width: 10px;
+    background-color: #ffa500;
+    border-radius: 0 50% 50% 50%;
+    bottom: 125px;
+    transform: rotate(45deg);
+    left: 95px;
+    z-index: 80;
+}
+
+.candle3-fire{
+    border: none;
+    position: absolute;
+    height: 10px;
+    width: 10px;
+    background-color: #ffa500;
+    border-radius: 0 50% 50% 50%;
+    bottom: 125px;
+    transform: rotate(45deg);
+    left: 125px;
+    z-index: 80;
+}
+
+.candle4-fire{
+    border: none;
+    position: absolute;
+    height: 10px;
+    width: 10px;
+    background-color: #ffa500;
+    border-radius: 0 50% 50% 50%;
+    bottom: 125px;
+    transform: rotate(45deg);
+    left: 155px;
+    z-index: 80;
+}
+
+.candle5-fire{
+    z-index: 80;
+    border: none;
+    position: absolute;
+    height: 10px;
+    width: 10px;
+    background-color: #ffa500;
+    border-radius: 0 50% 50% 50%;
+    bottom: 125px;
+    transform: rotate(45deg);
+    left: 185px;
+}
+
+.candle6-fire{
+    z-index: 80;
+    border: none;
+    position: absolute;
+    height: 10px;
+    width: 10px;
+    background-color: #ffa500;
+    border-radius: 0 50% 50% 50%;
+    bottom: 125px;
+    transform: rotate(45deg);
+    left: 214px;
+}
+
+.candle7-fire{
+    z-index: 80;
+    border: none;
+    position: absolute;
+    height: 10px;
+    width: 10px;
+    background-color: #ffa500;
+    border-radius: 0 50% 50% 50%;
+    bottom: 125px;
+    transform: rotate(45deg);
+    left: 244px;
+}
+
+.candle8-fire{
+    z-index: 80;
+    border: none;
+    position: absolute;
+    height: 10px;
+    width: 10px;
+    background-color: #ffa500;
+    border-radius: 0 50% 50% 50%;
+    bottom: 191px;
+    transform: rotate(45deg);
+    left:  88px;
+    z-index: 80;
+}
+
+.candle9-fire{
+    border: none;
+    position: absolute;
+    height: 10px;
+    width: 10px;
+    background-color: #ffa500;
+    border-radius: 0 50% 50% 50%;
+    bottom: 191px;
+    transform: rotate(45deg);
+    left: 121px;
+    z-index: 80;
+}
+
+.candle10-fire{
+    border: none;
+    position: absolute;
+    height: 10px;
+    width: 10px;
+    background-color: #ffa500;
+    border-radius: 0 50% 50% 50%;
+    bottom: 191px;
+    transform: rotate(45deg);
+    left: 155px;
+    z-index: 80;
+}
+
+.candle11-fire{
+    border: none;
+    position: absolute;
+    height: 10px;
+    width: 10px;
+    background-color: #ffa500;
+    border-radius: 0 50% 50% 50%;
+    bottom: 191px;
+    transform: rotate(45deg);
+    left: 188px;
+    z-index: 80;
+}
+
+.candle12-fire{
+    border: none;
+    position: absolute;
+    height: 10px;
+    width: 10px;
+    background-color: #ffa500;
+    border-radius: 0 50% 50% 50%;
+    bottom: 191px;
+    transform: rotate(45deg);
+    left:221px;
+    z-index: 80;
+}
+
+.candle13-fire{
+    border: none;
+    position: absolute;
+    height: 10px;
+    width: 10px;
+    background-color: #ffa500;
+    border-radius: 0 50% 50% 50%;
+    bottom: 247px;
+    transform: rotate(45deg);
+    left: 112px;
+}
+
+.candle14-fire{
+    border: none;
+    position: absolute;
+    height: 10px;
+    width: 10px;
+    background-color: #ffa500;
+    border-radius: 0 50% 50% 50%;
+    bottom: 247px;
+    transform: rotate(45deg);
+    left: 155px;
+}
+
+.candle15-fire{
+    border: none;
+    position: absolute;
+    height: 10px;
+    width: 10px;
+    background-color: #ffa500;
+    border-radius: 0 50% 50% 50%;
+    bottom: 247px;
+    transform: rotate(45deg);
+    left: 195px;
+    z-index: 90;
+}
+
+
+.hidden{
+    display: none;
+}
+
+.visible{
+    display: visible;
+}
+
+

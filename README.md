@@ -11,6 +11,7 @@ This birthday card project (made using the coding languages HTML, CSS and JavaSc
 * A cute embedded "Happy Birthday" GIF inside the birthday card
 * A technical function to "blow out" the birthday candles on the CSS cake when the user clicks on the candle flame (Made using JavaScript and HTML)
 * A birthday message inside the card (removed in this repository for the purpose of privacy and personal reasons.)
+* A seperate information page containing details of the gift.
 __________________________________________________________
 Why Did I Make This Project?
 -
@@ -27,8 +28,8 @@ I was faced with multiple challenges throughout the making of this project.
 * Challenge 2: After creating the "blow out the candles" function and finishing the card animations, I realised I couldn't even tap the buttons because of the animations playing :( In order to fix this, I added a "Disable Animations" button and "Enable Animations" button to fix this. Within these buttons I added functions so that when the "Disable Animations" was pressed, the JS would add a class of "noanim", stopping the anim. For the "Enable Animations" button, I did the opposite and removed the "noanim" class.
 * Challenge 3: I wanted to add a "Happy Birthday" audio that would autoplay when the user opened the browser page. However, I found out that some browsers didn't support autoplay audio when the page initially loaded. To fix this, I had to modify my initial idea and let the music play when the user hovered over the birthday card. 
 * Challenge 4: For the surprise gift after all 15 candles were "blown out", I wanted to create a gift which would grow, then shrink + show another image when clicked. In order to achieve this, I used @keyframes and made growing and shrinking animations. Additionally, I created a logic (if/else) statement to detect if the variable candlecount (the variable responsible for counting the number of candles being blown out) equalled 15, and if it did, the gift growing animation would be initialised.
-> I had a bug where the gift image would pop up after the shrink animation, which I didn't want. After some trial and error, I managed to remove this bug. :P.
-* **ADD MORE LATER**
+    > I had a bug where the gift image would pop up after the shrink animation, which I didn't want. After some trial and error, I managed to remove this bug. :P.
+
 
 I think being able to create this project has given me a boost in confidence, and I also further developed my HTML, CSS and JavaScript skills along the way, which I'm extremely happy about. :)
 __________________________________________________________

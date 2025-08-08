@@ -7,6 +7,7 @@ document.addEventListener("DOMContentLoaded", function() {
   })
 });
 
+document.getElementById("gift").classList.add("hidden");
 
 let candlecount = 0;
 const gift = document.getElementById("gift");
@@ -23,6 +24,8 @@ function hideButton(buttonId) {
       gift.classList.remove("hidden")
       gift.classList.add("visible")
       gift.classList.add("addzindex")
+      gift.classList.add("giftgrow");
+
     } else {
       gift.classList.add("hidden")
       gift.classList.remove("visible")
@@ -58,7 +61,28 @@ function startAnim() {
 
 function openPresent() {
   const gift = document.getElementById("gift");
-  gift.classList.add("hidden");
+  gift.classList.add("giftshrink");
+  gift.classList.remove("giftgrow");
+  //work on later
+  document.getElementById("giftcontentimg").classList.add("visible");
+  document.getElementById("giftcontentimg").classList.add("addzindex");
+  document.getElementById("giftcontentimg").classList.add("giftgrow2");
+
+ 
+  
+}
+
+function clickin() {
+  const giftcontentimg = document.getElementById("giftcontentimg");
+  giftcontentimg.classList.add("hidden");
+  giftcontentimg.classList.remove("visible");
+  giftcontentimg.classList.remove("addzindex");
+  giftcontentimg.classList.remove("giftgrow2");
+
+  const card = document.getElementById("card");
+  card.classList.add("addzindex2");
+
+
 
 }
 

@@ -5,37 +5,36 @@ Note that in this repository, I removed the name of the receiver and also the me
 __________________________________________________________
 What It Is:
 -
-This birthday card project (made using the coding languages HTML, CSS and JavaScript) serves as a special gift, and contains many technical and aesthetic elements, which are:
-* An animation of an opening and closing birthday card (using CSS transitions)
-* A birthday cake created purely from CSS code and HTML divs
-* A cute embedded "Happy Birthday" GIF inside the birthday card
-* A technical function to "blow out" the birthday candles on the CSS cake when the user clicks on the candle flame (Made using JavaScript and HTML)
-* A birthday message inside the card (removed in this repository for the purpose of privacy and personal reasons.)
-* A seperate information page containing details of the gift.
+This birthday card project (made using the coding languages HTML, CSS and JavaScript) serves as a special gift, and contains many technical and aesthetic elements, which are:  
+* An animation of an opening and closing birthday card (using CSS transitions)  
+* A birthday cake created purely from CSS code and HTML divs  
+* A cute embedded "Happy Birthday" GIF inside the birthday card  
+* A technical function to "blow out" the birthday candles on the CSS cake when the user clicks on the candle flame (Made using JavaScript and HTML)  
+* A birthday message inside the card (removed in this repository for the purpose of privacy and personal reasons.)  
+* A seperate information page containing details of the gift. (Specific details removed for privacy and security reasons)  
 __________________________________________________________
 Why Did I Make This Project?
 -
-This was an idea I had long before I had even known about the Athena Award, around sometime during April-May. My friend, who I had dedicated this project to, was the person who taught me how to code in HTML and CSS in the first place. I wanted to surprise her on her birthday by creating a digital HTML & CSS card, which I hoped would showcase the skills I had learned from her, and also my dedication and thankfulness to her as a friend! At the time though, I wasn't particularly sure of my coding abilities and doubted myself, so I didn't do it initially. However, after I had developed my coding skills more, I felt more confident that I could complete this birthday card project, and so I did!
+This was an idea I had long before I had even known about the Athena Award, around sometime during April-May. My friend, who I had dedicated this project to, was the person who taught me how to code in HTML and CSS in the first place. I wanted to surprise her on her birthday by creating a digital HTML & CSS card, which I hoped would showcase the skills I had learned from her, and also my dedication and thankfulness to her as a friend! At the time though, I wasn't particularly sure of my coding abilities and doubted myself, so I didn't do it initially. However, after I had developed my coding skills more, I felt more confident that I could complete this birthday card project, and so I did!  
 __________________________________________________________
-This project was made by using the coding languages HTML, CSS and JavaScript. I used the code editor VS Code to create this project.
-* HTML: Used for the basic structure of the website, as well as also being used to add images, buttons and (lots of) divs. 
-* CSS: The *primary* code language used for this project. It's responsible for the design of the cake, card, background and animations.
-* JS: I used it for button functions, such as for the blowing of the candles and the disable/enable buttons.
-* As a special addition, I added my friend's favourite things: the colour pale green, lemon cake, and the font Outfit!
+This project was made by using the coding languages HTML, CSS and JavaScript. I used the code editor VS Code to create this project.  
+* HTML: Used for the basic structure of the website, as well as also being used to add images, buttons and (lots of) divs.   
+* CSS: The *primary* code language used for this project. It's responsible for the design of the cake, card, background and animations.  
+* JS: I used it for button functions, such as for the blowing of the candles and the disable/enable buttons.  
+* As a special addition, I added my friend's favourite things: the colour pale green, lemon cake, and the font Outfit! (That's pure dedication right there)  
 __________________________________________________________
 I was faced with multiple challenges throughout the making of this project.
-* Challenge 1: I wanted to create a function for the candle flame to disappear (to mimic the blowing of the candles). To do this I had to link JavaScript on my website, a language whcih I wasn't too familiar with at the time. After learning with some resources online (and using some of my own prior knowledge and intuition) I managed to create a function where the candle (button) would disappear after being clicked.
-* Challenge 2: After creating the "blow out the candles" function and finishing the card animations, I realised I couldn't even tap the buttons because of the animations playing :( In order to fix this, I added a "Disable Animations" button and "Enable Animations" button to fix this. Within these buttons I added functions so that when the "Disable Animations" was pressed, the JS would add a class of "noanim", stopping the anim. For the "Enable Animations" button, I did the opposite and removed the "noanim" class.
-* Challenge 3: I wanted to add a "Happy Birthday" audio that would autoplay when the user opened the browser page. However, I found out that some browsers didn't support autoplay audio when the page initially loaded. To fix this, I had to modify my initial idea and let the music play when the user hovered over the birthday card. 
-* Challenge 4: For the surprise gift after all 15 candles were "blown out", I wanted to create a gift which would grow, then shrink + show another image when clicked. In order to achieve this, I used @keyframes and made growing and shrinking animations. Additionally, I created a logic (if/else) statement to detect if the variable candlecount (the variable responsible for counting the number of candles being blown out) equalled 15, and if it did, the gift growing animation would be initialised.
-    > I had a bug where the gift image would pop up after the shrink animation, which I didn't want. After some trial and error, I managed to remove this bug. :P.
-
+* Challenge 1: I wanted to create a function for the candle flame to disappear (to mimic the blowing of the candles). To do this I had to link JavaScript on my website, a language whcih I wasn't too familiar with at the time. After learning with some resources online (and using some of my own prior knowledge and intuition) I managed to create a function where the candle (button) would disappear after being clicked.  
+* Challenge 2: After creating the "blow out the candles" function and finishing the card animations, I realised I couldn't even tap the buttons because of the animations playing :( In order to fix this, I added a "Disable Animations" button and "Enable Animations" button to fix this. Within these buttons I added functions so that when the "Disable Animations" was pressed, the JS would add a class of "noanim", stopping the anim. For the "Enable Animations" button, I did the opposite and removed the "noanim" class.  
+* Challenge 3: I wanted to add a "Happy Birthday" audio that would autoplay when the user opened the browser page. However, I found out that some browsers didn't support autoplay audio when the page initially loaded. To fix this, I had to modify my initial idea and let the music play when the user hovered over the birthday card.   
+* Challenge 4: For the surprise gift after all 15 candles were "blown out", I wanted to create a gift which would grow, then shrink + show another image when clicked. In order to achieve this, I used @keyframes and made growing and shrinking animations. Additionally, I created a logic (if/else) statement to detect if the variable candlecount (the variable responsible for counting the number of candles being blown out) equalled 15, and if it did, the gift growing animation would be initialised.  
+    > I had a bug where the gift image would pop up after the shrink animation, which I didn't want. After some trial and error, I managed to remove this bug. :P.  
 
 I think being able to create this project has given me a boost in confidence, and I also further developed my HTML, CSS and JavaScript skills along the way, which I'm extremely happy about. :)
 __________________________________________________________
 Project Stats:
 -
-* Time spent:
+* Time spent: 17 hrs 26 mins
 * Code editor used: VS Code
 * Coding language(s): HTML, CSS, JavaScript
 __________________________________________________________

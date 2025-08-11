@@ -5,9 +5,6 @@
     
 }
 
-/*lock card when space is pressed? so the candles can be clicked*/
-
-
 .candlesfire{
     z-index: 200;
 }
@@ -350,7 +347,7 @@ p{
     padding-top: 25px;
     padding-left: 15px;
     padding-right: 15px;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 250;
   
 }

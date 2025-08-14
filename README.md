@@ -35,7 +35,7 @@ I think being able to create this project has given me a boost in confidence, an
 __________________________________________________________
 Project Stats:
 -
-* Time spent: 17 hrs 26 mins
+* Time spent: 19 hrs 11 mins
 * Code editor used: VS Code
 * Coding language(s): HTML, CSS, JavaScript
 __________________________________________________________

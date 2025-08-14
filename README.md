@@ -1,4 +1,5 @@
 # CSS-Animated Birthday Card
+[![Athena Award Badge](https://img.shields.io/endpoint?url=https%3A%2F%2Faward.athena.hackclub.com%2Fapi%2Fbadge)](https://award.athena.hackclub.com?utm_source=readme)  
 This project is called CSS Birthday Card.   
 It is a project dedicated to one of my best friends, and is also my second submission for the 2025 Athena Award.  
 Note that in this repository, I removed the name of the receiver and also the message inside the card as I would prefer to keep both of those private! (I hope that is understandable! ^^)  

@@ -14,7 +14,7 @@
     <audio loop src="assets/Happy-birthday-piano-music/Happy-birthday-piano-music.mp3" id="audio">Your browser doesn't support audio :(</audio>
     <img class="bg" src="assets/Aesthetic wallpaper (1).jpg" alt="background!">
 
-    <h1>Hover to open! >.<</h1>
+    <h1> Hover to open! >.<</h1>
 
     <div class="giftimagething" onclick="openPresent()">
         <img src="assets/Gifttransparent.png" alt="gift!" class="gift" id="gift" >
@@ -24,10 +24,13 @@
         <img src="assets/WEBSITE DOMAIN.png" alt="gift!" id="giftcontentimg" class="giftcontentimg" onclick="clickin()"> 
     </a> 
     
+    <div class="button-container">
+        <button class="noanimbutton" id="noanimbutton" onclick="stopAnim()">Disable Card Animations</button>
+        <button class="yesanimbutton" id="yesanimbutton" onclick="startAnim()">Enable Card Animations</button>
 
-    <button class="noanimbutton" id="noanimbutton" onclick="stopAnim()">Disable Card Animations</button>
-    <button class="yesanimbutton" id="yesanimbutton" onclick="startAnim()">Enable Card Animations</button>
+    </div>
 
+    
     <div id="card" class="card">
         <div class="outside">
             <div class="front">
@@ -83,6 +86,7 @@
             </div>
         </div>
         <div class="inside">
+            <br>
             <h2>(This is a placeholder message: Actual message and card receiver removed for privacy reasons.)</h2>
             <p class="outfitfontnorm">
                 Happy Birthday! 
@@ -91,7 +95,7 @@
                 I hope you have a wonderful day filled with joy and laughter. >.<
                 <br>
                 <br>
-                P.S. Press "Disable Card Animations", then click the flames on the candles to blow them out and receive a special gift!
+                P.S. Press the "Disable Card Animations" button, then click the flames on the candles to blow them out and receive a special gift!
                 <br>
                 <br>
                 From Audrey :D
@@ -103,7 +107,6 @@
         </div> 
 
     </div>
-
     <script src="main.js"></script>
 </body>
 </html>

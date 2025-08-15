@@ -14,7 +14,7 @@ This birthday card project (made using the coding languages HTML, CSS and JavaSc
 * A birthday message inside the card (removed in this repository for the purpose of privacy and personal reasons.)  
 * A seperate information page containing details of the gift. (Specific details removed for privacy and security reasons)  
 __________________________________________________________
-Why Did I Make This Project?
+Personal Project Evaluation and Reflection:
 -
 This was an idea I had long before I had even known about the Athena Award, around sometime during April-May. My friend, who I had dedicated this project to, was the person who taught me how to code in HTML and CSS in the first place. I wanted to surprise her on her birthday by creating a digital HTML & CSS card, which I hoped would showcase the skills I had learned from her, and also my dedication and thankfulness to her as a friend! At the time though, I wasn't particularly sure of my coding abilities and doubted myself, so I didn't do it initially. However, after I had developed my coding skills more, I felt more confident that I could complete this birthday card project, and so I did!  
 __________________________________________________________
